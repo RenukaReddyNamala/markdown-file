@@ -1,0 +1,98 @@
+
+R version 4.3.2 (2023-10-31 ucrt) -- "Eye Holes"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> # Function documentation
+> write_quick_plot_function <- function() {
++   cat("# QuickPlotR Package Documentation\n\n")
++   
++   cat("## Introduction\n\n")
++   cat("QuickPlotR is an R package designed to simplify and accelerate the process of data visualization. This document serves as a detailed guide to the main functions developed within QuickPlotR, explaining their purposes, inputs, outputs, and providing relevant examples.\n\n")
++   
++   cat("## Functions\n\n")
++   
++   cat("### 1. `quick_plot()`\n\n")
++   cat("#### Purpose:\n")
++   cat("`quick_plot()` is the primary function of QuickPlotR, facilitating the creation of various types of plots with minimal effort.\n\n")
++   
++   cat("#### Inputs:\n")
++   cat("- **data**: The dataset to be plotted, typically a dataframe.\n")
++   cat("- **x**: The variable to be plotted on the x-axis.\n")
++   cat("- **y**: The variable to be plotted on the y-axis.\n")
++   cat("- **type**: Type of plot to be created (e.g., 'scatter', 'line', 'bar').\n")
++   cat("- **...**: Additional parameters for customization (e.g., color, title, labels).\n\n")
++   
++   cat("#### Outputs:\n")
++   cat("- A plot object representing the visualization.\n\n")
++   
++   cat("#### Example:\n")
++   cat("```R\n")
++   cat("# Load required packages\n")
++   cat("library(QuickPlotR)\n\n")
++   cat("# Load sample dataset\n")
++   cat("data <- read.csv(\"sample_data.csv\")\n\n")
++   cat("# Create a scatter plot\n")
++   cat("quick_plot(data = data, x = \"Age\", y = \"Salary\", type = \"scatter\", color = \"blue\", title = \"Age vs Salary\")\n")
++   cat("```\n\n")
++   
++   # Repeat similar blocks for other functions
++   
++   # Write to Markdown file
++   writeLines("\n", "quickplotr_documentation.md")
++ }
+> 
+> # Call the function to generate Markdown documentation
+> write_quick_plot_function()
+# QuickPlotR Package Documentation
+
+## Introduction
+
+QuickPlotR is an R package designed to simplify and accelerate the process of data visualization. This document serves as a detailed guide to the main functions developed within QuickPlotR, explaining their purposes, inputs, outputs, and providing relevant examples.
+
+## Functions
+
+### 1. `quick_plot()`
+
+#### Purpose:
+`quick_plot()` is the primary function of QuickPlotR, facilitating the creation of various types of plots with minimal effort.
+
+#### Inputs:
+- **data**: The dataset to be plotted, typically a dataframe.
+- **x**: The variable to be plotted on the x-axis.
+- **y**: The variable to be plotted on the y-axis.
+- **type**: Type of plot to be created (e.g., 'scatter', 'line', 'bar').
+- **...**: Additional parameters for customization (e.g., color, title, labels).
+
+#### Outputs:
+- A plot object representing the visualization.
+
+#### Example:
+```R
+# Load required packages
+library(QuickPlotR)
+
+# Load sample dataset
+data <- read.csv("sample_data.csv")
+
+# Create a scatter plot
+quick_plot(data = data, x = "Age", y = "Salary", type = "scatter", color = "blue", title = "Age vs Salary")
+```
+
+> 
